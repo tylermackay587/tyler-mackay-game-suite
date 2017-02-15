@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="gameSuite">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="scripts/angular/angular.js"></script>
+    <script src="scripts/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="./app/homepage/homepageController.js"></script>
+    <script src="./app/games/gamesController.js"></script>
+    <script src="./app/leaderboard/leaderboard.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to the game suite!</h1>
+    <nav>
+    <ul class="topnav" id="myTopnav">
+      <li class="left"><a href="#/">Home</a></li>
+      <li class="left"><a href="#/games">Games</a></li>
+      <li class="left"><a href="#/leaderboard">Leaderboard</a></li>
+      <li class="right">Login</li>
+    </ul>
+    </nav>
+    <div ng-view></div>
+  </body>
+</html>
