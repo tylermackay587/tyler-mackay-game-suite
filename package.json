@@ -1,0 +1,24 @@
+{
+  "name": "tyler-mackay-game-suite",
+  "version": "1.0.0",
+  "description": "A collection of games.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylermackay587/tyler-mackay-game-suite.git"
+  },
+  "author": "Tyler Mackay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylermackay587/tyler-mackay-game-suite/issues"
+  },
+  "homepage": "https://github.com/tylermackay587/tyler-mackay-game-suite#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "express": "^4.14.1"
+  }
+}
