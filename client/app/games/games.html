@@ -1,3 +1,9 @@
 <div ng-controller="gamesController">
-<h1> {{ text }} </h1>
+  <h1> {{ text }} </h1>
+  <div class='gamesContainer'>
+    <div class='game' ng-repeat="game in games">
+      <p> {{ game.title}} </p>
+      <p> {{ game.description }} </p>
+      </div>
+    </div>
 </div>

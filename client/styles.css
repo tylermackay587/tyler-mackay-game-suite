@@ -25,6 +25,24 @@ body {
   background-color: #222;
 }
 
+.gamesContainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.game {
+  height: 300px;
+  width: 200px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
 .right {
 	float: right;
 }
