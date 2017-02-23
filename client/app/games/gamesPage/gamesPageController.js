@@ -1,5 +1,13 @@
 angular.module('gameSuite')
-.controller('gamesController', function($scope) {
+.config(function($routeProvider, $locationProvider) {
+  $locationProvider.hashPrefix('');
+  $routeProvider
+  .when('/games/rock-paper-scissors', {
+    templateUrl: 'app/games/rock-paper-scissors/rock-paper-scissors.html',
+    controller: 'rock-paper-scissorsController'
+  })
+})
+.controller('gamesPageController', function($scope, $location) {
     $scope.text = 'This is where the games will be!';
     $scope.games = [
       {
@@ -23,4 +31,7 @@ angular.module('gameSuite')
         description: 'memory game description'
       }
     ];
+    $scope.changeLocation = function(game) {
+      $location.path('/games/' + game);
+    };
 });

@@ -55,3 +55,13 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.redRPS {
+  float: right;
+  height: 170px;
+  width: 170px;
+}
+.blueRPS {
+  height: 170px;
+  width: 170px;
+}
