@@ -3,8 +3,10 @@ angular.module('gameSuite')
   $scope.text = "This is where the rock-paper-scissors game will be!";
   $scope.choices = ['Rock', 'Paper', 'Scissors'];
   $scope.choosePlay = function(color, piece) {
+    $scope.play = null;
+    $scope.enemyPlay = null;
     $scope.play = color + piece;
-      $scope.chooseEnemyPlay(color);
+    $scope.chooseEnemyPlay(color);
   }
   $scope.chooseEnemyPlay = function(color) {
     if (color === 'red') {
@@ -13,10 +15,9 @@ angular.module('gameSuite')
       color = 'red';
     }
     var choice = $scope.choices[$scope.getRandomInit(0, 3)];
-    console.log(color + choice);
     $timeout(function() {
     $scope.enemyPlay = color + choice;
-    }, 500)
+    }, 100)
   }
   $scope.getRandomInit = function(min, max) {
     min = Math.ceil(min);
