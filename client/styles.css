@@ -61,7 +61,22 @@ a {
   height: 170px;
   width: 170px;
 }
+
 .blueRPS {
   height: 170px;
   width: 170px;
+}
+
+.blueChoice {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  left: 33%;
+}
+
+.redChoice {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  right: 33%;
 }
