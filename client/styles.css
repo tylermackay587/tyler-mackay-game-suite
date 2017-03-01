@@ -86,6 +86,12 @@ a {
   margin: 5px auto 5px 5px;
 }
 
+.spaceShip {
+  position: absolute;
+  height: 120px;
+  width: 230px;
+}
+
 
 
 

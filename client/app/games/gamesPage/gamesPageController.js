@@ -6,6 +6,10 @@ angular.module('gameSuite')
     templateUrl: 'app/games/rock-paper-scissors/rock-paper-scissors.html',
     controller: 'rock-paper-scissorsController'
   })
+  .when('/games/typing-tank', {
+    templateUrl: 'app/games/typing-tank/typing-tank.html',
+    controller: 'typing-tankController'
+  })
 })
 .controller('gamesPageController', function($scope, $location) {
     $scope.text = 'This is where the games will be!';
