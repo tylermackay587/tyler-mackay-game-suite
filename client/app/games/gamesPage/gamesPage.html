@@ -1,7 +1,7 @@
 <div ng-controller="gamesPageController">
   <h1> {{ text }} </h1>
   <div class='gamesContainer'>
-    <div class='game' ng-repeat="game in games" ng-click="changeLocation(game.title)">
+    <div class='game' ng-repeat="game in games" ng-click="changeLocation(game.route)">
       <p> {{ game.title}} </p>
       <p> {{ game.description }} </p>
       </div>
