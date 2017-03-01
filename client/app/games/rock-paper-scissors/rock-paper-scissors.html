@@ -1,5 +1,6 @@
 <div ng-controller="rock-paper-scissorsController">
-<h1> {{ text }} </h1>
+<h2 class="score"> Highest Streak: {{ highestStreak }} </h2>
+<h2 class="score"> Current Streak: {{ currentStreak }} </h2>
 <img class="blueRPS" ng-click="choosePlay('blue', 'Rock')" src="graphics/blueRock.png">
 <img class="redRPS" ng-click="choosePlay('red', 'Rock')" src="graphics/redRock.png">
 <br>
