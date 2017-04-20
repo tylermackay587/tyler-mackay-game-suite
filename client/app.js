@@ -1,6 +1,6 @@
 angular.module('gameSuite',
   [
-  'ngRoute'
+  'ngRoute',
   ])
 .config(function($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('');
