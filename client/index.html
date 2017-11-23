@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <script src="scripts/angular/angular.js"></script>
-    <script src="scripts/angular-route/angular-route.js"></script>
-    <script src="scripts/jquery/dist/jquery.js"></script>
-    <script src="app.js"></script>
-    <script src="./app/homepage/homepageController.js"></script>
-    <script src="./app/games/gamesPage/gamesPageController.js"></script>
-    <script src="./app/leaderboard/leaderboardController.js"></script>
-    <script src="./app/games/rock-paper-scissors/rock-paper-scissorsController.js"></script>
-    <script src="./app/games/typing-tank/typing-tankController.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(() => {
+      setTimeout(() => {
+
+          $('.red').fadeTo(5000, 1, () => {
+            console.log('done')
+          })
+      }, 3000)    
+      })
+    </script>
+
   </head>
   <body>
-    <nav>
-    <ul class="topnav">
-      <li class="left"><a href="#/">Home</a></li>
-      <li class="left"><a href="#/gamesPage">Games</a></li>
-      <li class="left"><a href="#/leaderboard">Leaderboard</a></li>
-      <li class="right">Login</li>
-    </ul>
-    </nav>
-    <div ng-view></div>
+    <h1>The Church of Scientology</h1>
+    <h2>Developed by L. Ron Hubbard, Scientology is a religion that offers a precise path leading to a complete and certain understanding of one’s true spiritual nature and one’s relationship to self, family, groups, Mankind, all life forms, the material universe, the spiritual universe and the Supreme Being.</h2>
+    <!-- <div class="ron"></div> -->
+    <img src='https://www.scientology.org/theme/images/aoa/Spiral_ScnLogo_256color.png'>
+    <h1 class="red">Shantey, you cannot hide</h1>
   </body>
 </html>
